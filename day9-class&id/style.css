@@ -1,0 +1,22 @@
+.city{
+    background-color: rgb(51, 51, 84);
+    color:yellowgreen;
+    border:2px saddlebrown;
+    padding:1px;
+    margin: 5px;
+    text-align: center;
+    
+}
+.district{
+    background-color: rgb(5, 5, 58);
+    color:rgb(223, 170, 223);
+    border:5px saddlebrown;
+    padding: 2px;  
+    text-align: left;
+
+}
+#best{
+    background-color: rgb(216, 98, 47);
+    color:rgb(10, 1, 41);
+    text-align: center;
+}
