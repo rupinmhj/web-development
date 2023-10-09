@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Please complete the form for the selection of the best audio and video.</h2>
+    <form>
+        <fieldset>
+            <div>
+                <label for="fname" >First name:</label>
+            <input type="text" id="fname" name="fname" placeholder="Enter your first name">
+            </div>
+            <div>
+                <label for="lname" >Last name:</label>
+            <input type="text" id="lname" name="lname" placeholder="Enter your last name">
+            </div>
+            <div>
+                <label for="email" >Email address:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email address">
+            </div>
+            <div>
+                <label for="audio" >Choose audio:</label>
+                <select id="audio" name="audio">
+                    <option value="Audio1">Audio1</option>
+                    <option value="Audio2">Audio2</option>
+                    <option value="Audio3">Audio3</option>
+                    <option value="Audio4">Audio4</option>
+                    <option value="Audio5">Audio5</option>
+                </select>
+            </div>
+            <div>
+                <label for="video" >Choose video:</label>
+                <select id="video" name="video">
+                    <option value="Video1">Video1</option>
+                    <option value="Video2">Video2</option>
+                    <option value="Video3">Video3</option>
+                    <option value="Video4">Video4</option>
+                    <option value="Video5">Video5</option>
+                    
+                </select>
+            </div>
+            <div>
+                <h4>Write something about audio and video</h4>
+                <textarea name="review" id="review" cols="30" rows="10"></textarea>
+            </div>
+            <div>
+                <input type="submit" value="submit">
+            </div>
+
+            
+        </fieldset>
+    </form>
+</body>
+</html>
