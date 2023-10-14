@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Types of CSS</title>
+    <style>
+        .emb {
+            color: rgb(2, 22, 2);
+            background-color: rgb(248, 191, 201);
+        }
+
+        code {
+            white-space: pre;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 style="color:red; background-color: yellow; text-align: center;">Types of CSS </h1>
+    <div>
+        <ol>
+            <li>Inline CSS</li>
+            <code>
+                &lt;h1 style="color:red; background-color: yellow; text-align: center;"&gt;Types of CSS &lt;/h1&gt;
+            </code>
+
+            <li class="emb">Embedded or internal CSS</li>
+            <code>
+                &lt;style&gt;
+                    .emb{
+                        color:rgb(2, 22, 2);
+                        background-color:rgb(248, 191, 201);
+                    }
+                &lt;/style&gt;
+            </code>
+
+            <li id="external">External CSS</li>
+            <p>This code is written in separate file named style.css.</p>
+            <code>
+                #external{
+                    color:blueviolet;
+                    background-color: bisque;
+                }
+            </code>
+        </ol>
+    </div>
+</body>
+
+</html>
