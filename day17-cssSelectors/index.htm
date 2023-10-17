@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        div{
+            background-color: rgb(86, 86, 162);
+            font-size: large;
+        }
+        /* class selector */
+        .red{
+            background-color: rgb(162, 86, 86);
+            color:rgb(29, 21, 36);
+        }
+        /* id selector */
+        #green{
+            background-color: rgb(2, 33, 2);
+            color:rgb(187, 161, 210);
+        }
+
+        /* child selectors */
+        div >p{
+            background-color: aquamarine;
+            color:brown;
+        }
+
+        /* descendant selectors */
+        div article{
+            background-color: aquamarine;
+            color:brown;
+        }
+
+        /* universal selector */
+        *{
+            margin:4;
+            padding:70;
+            /* border:1px solid; */
+        }
+
+        /* pseudo selector */
+        a:hover{
+            color:green;
+        }
+        
+    </style>
+</head>
+<body>
+    <div>
+        I am in div.
+        <p>
+            I am a child of div.
+        </p>
+    </div>
+    <div class="red">
+        I am in class.
+    </div>
+    <div id="green">
+        I am in class.
+        <span>
+            <article>
+                I am the descendant of div elements
+            </article>
+        </span>
+    </div>
+    <a href="https://www.google.com">Go to google</a>
+    <a href="https://www.instagram.com">Go to instagram</a>
+   
+</body>
+</html>
