@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model</title>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+        }
+        .box{
+            margin:15px;
+            padding: 10px;
+            border:5px solid black;
+            background: aquamarine;
+        }
+        .box1{
+            margin:30px;
+            padding:15px;
+            background-color: bisque;
+            height: 50px;
+            width: 50%;
+        }
+        .box2{
+            margin:25px;
+            padding:15px;
+            background-color: bisque;
+            background: #a47171;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CSS Box Model</h1>
+    <main>
+        <p class="box box1">
+            Content - The content of the box, where text and images appear.
+        </p >
+        <p class="box box2"> Padding - Clears an area around the content. The padding is transparent
+        </p>
+        <p> Border - A border that goes around the padding and content
+        </p>
+        <p> Margin - Clears an area outside the border. The margin is transparent
+        </p><br>
+        <h3>Figure:</h3>
+        <img src="https://miro.medium.com/v2/resize:fit:828/format:webp/1*E_YuB8x1B3T3h6PIJ_I9qQ.png" alt="Image loading">
+    </main>
+</body>
+
+</html>
