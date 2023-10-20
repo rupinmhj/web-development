@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS specificity</title>
+    <style>
+        /* The specificity of this selector is 1  */
+        h1 {
+            color: aqua;
+        }
+
+        /* The specificity of this selector is 10  */
+        .cpurple {
+            color: purple;
+        }
+
+        /* The specificity of this selector is 1 + 10 = 11  */
+        h1.yellow {
+            color: yellow;
+        }
+
+        /* This is an example of attribute selector. The specificity of this selector is 10 */
+        a[target]:hover{
+            color: maroon;
+        }
+        /* This is an example of id selector. The specificity of this selector is 100 */
+
+        #green{
+            color:green;
+        }
+
+        /* The specificity of this selector is 10  */
+        .cred {
+            color: red;
+        }
+        body{
+            background-image:url('https://c4.wallpaperflare.com/wallpaper/826/109/269/spiderman-into-the-spider-verse-2018-movies-movies-spiderman-wallpaper-preview.jpg');
+    background-size:cover;
+        }
+
+    </style>
+</head>
+
+<body>
+    
+    <div>
+        <h1 id="green" class="yellow cred cpurple" >CSS Specificity</h1>
+        <a href="https://www.google.com">Google</a>
+        <a href="https://www.youtube.com" target="_blank">Youtube</a>
+        <a href="https://www.facebook.com" target="_blank">Facebook</a>
+    </div>
+</body>
+
+</html>
