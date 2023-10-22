@@ -1,0 +1,33 @@
+div{
+    border:1px solid;
+    background-color: antiquewhite;
+    width:1920px;
+    /* height: 720px; */
+    box-sizing: border-box;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.box{
+    border:1px solid;
+    background-color:aquamarine;
+    width:70vw;
+    margin:auto;
+}
+.container{
+    border:1px blue;
+    background-color: rgb(226, 207, 244);
+    width:80vw;
+    height:90vh;
+    font-size: 25px;
+
+}
+
+.container p{
+    background-color: rgb(196, 153, 153);
+    width:50%;
+    font-size: 1.5em;
+    margin:10px;
+    
+}
