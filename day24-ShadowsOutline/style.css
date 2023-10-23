@@ -1,0 +1,18 @@
+div {
+    border: 1px solid;
+    background-color: azure;
+    box-shadow: 1px 1px 8px 3px rgb(86, 107, 86);
+    padding: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-radius: 10px;
+}
+.shad{
+    text-shadow: 7px 7px 4px green;
+    border: 1px solid;
+    padding: 7px;
+    outline: 2px solid green;
+    outline-offset: 5px;
+    margin-top: 25px;
+    margin-left:10px;
+    
+}
