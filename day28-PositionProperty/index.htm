@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position Property</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .boss{
+            border:1px solid;
+            margin: 10px;
+            padding:20px;
+            /* position: relative; */
+        }
+
+        .box {
+            width: 80vw;
+            height: 250px;
+            border: 1px solid rgb(6, 58, 6);
+
+        }
+
+        .box1 {
+            background-color: aliceblue;
+            position: relative;
+            top:-5px;
+            ;
+        }
+
+        .box2 {
+            background-color: aqua;
+            /* position: relative;
+            top: -30px;
+            left: 30px */
+        }
+
+        .box3 {
+            background-color: beige;
+            position: fixed;
+            height:100px;
+            bottom: -50px;
+            left:40px
+            /* top: 40px; */
+        }
+
+        .box4 {
+            background-color: rgb(60, 60, 75);
+
+            
+            
+        }
+    </style>
+</head>
+
+<body>
+    <h2>CSS Positon Property</h2>
+    <div class="boss">
+        <div class="box1 box">Box1</div>
+        <div class="box2 box">Box2</div>
+        <div class="box3 box">Box3</div>
+        <div class="box4 box">Box4</div>
+    </div>
+
+</body>
+
+</html>
