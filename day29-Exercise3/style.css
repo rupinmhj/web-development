@@ -1,0 +1,45 @@
+.box{
+    border: 1.5px solid rgb(211, 219, 194);
+    border-radius: 15px;
+    height: 539px;
+    width: 365px;
+   
+}
+img{
+    width:350px;
+    position:relative;
+    margin:7px;
+    border-radius: 15px;
+    
+}
+.image1{
+    /* border:2px solid; */
+}
+span{
+    border:2px solid rgb(236, 206, 206);
+    /* margin-left: 20px; */
+    border-radius: 15px;
+    padding:3px;
+    
+    
+}
+.but{
+    margin-top:15px;
+    margin-left:10px;
+}
+h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:rgb(14, 14, 33);
+    margin-left:10px;
+
+}
+p{
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: justify;
+    margin-top: 2px;
+}
+button{
+    border-radius:15px;
+    margin-left: 142px;
+}
