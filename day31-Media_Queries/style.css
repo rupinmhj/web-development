@@ -1,0 +1,23 @@
+body{
+    background-color:bisque;
+}
+@media  only screen and (max-width:450px) {
+    body{
+        background-color: rgb(144, 111, 175);
+    }
+    .boxes{
+        flex-direction: column;
+    }
+    
+}
+.boxes{
+    display: flex;
+}
+
+.box{
+    width: 344px;
+    height: 344px;
+    background-color: rgb(143, 14, 14);
+    padding: 3px;
+    margin: 3px;
+}
