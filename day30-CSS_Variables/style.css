@@ -1,0 +1,52 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --color:rgb(196, 255, 253);
+    --scolor:rgb(129, 107, 109);
+    --defpad:15px;
+}
+.nav{
+    background-color:var(--color);
+    display:fixed;
+}
+ul{
+    display:flex;
+}
+ul li{
+    padding: var(--defpad);
+    list-style: none;
+    background-color: var(--color);
+}
+#about{
+    position:relative;
+    left:1200px;
+}
+.school{
+    height:350px;
+    width: 700px;
+    border: 2px solid var(--scolor);
+    border-radius: 10px;
+    margin: 20px;
+}
+img{
+    height:250px;
+}
+span{
+    position: relative;
+    right: -477px;
+    bottom: 249px;
+}
+.para{
+    position:relative;
+    /* border:1px solid; */
+    width:250px;
+    margin:5px;
+    padding:var(--defpad);
+    text-overflow: ellipsis;
+    text-align: justify;
+    bottom:250px;
+    left: 400px;
+    background-color: var(--scolor);
+}
