@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --main-color:rgb(125, 64, 64);
+    --font-color:rgb(176, 161, 161);
+    --secondary-color:rgb(192, 140, 140);
+}
+body{
+    background-color: rgb(132, 132, 224);
+    background-color: var(--secondary-color);
+}
+nav ul div img{
+    height: 45px;
+}
+nav{
+    /* background-color: rgb(58, 58, 124); */
+    background-color: var(--main-color);
+
+}
+li {
+    list-style: none;
+    text-decoration: none;
+    margin:10px;
+    padding:0px 100px 0px 0px;
+}
+li a{
+    list-style: none;
+    text-decoration: none;
+    color:white;
+    font-family: Poppins;
+    font-weight: bolder;
+}
+nav ul{
+    display: flex;
+
+}
+na
