@@ -1,0 +1,33 @@
+.grid-container{
+    display: grid;
+    grid-template-areas: "nav nav nav"
+                "article article img"
+                "footer footer footer";
+    background-color: bisque;
+    /* gap:10px; */
+    /* border:2px solid black; */
+
+}
+.grid-container >div{
+    border: 2px solid blue;
+    /* background-color: blueviolet; */
+    height: 100px;
+    /* width: 100px;
+    padding:10px; */
+    margin:10px;  
+    text-align: center;  
+}
+.item-1 {
+    grid-area: nav;
+    background-color: aqua;
+}
+.item-2{
+    grid-area:article;
+    background-color: blueviolet;
+}
+.item-3{
+    grid-area:img;
+}
+.item-4{
+    grid-area:footer;
+}
