@@ -1,0 +1,19 @@
+/* *{
+    margin: 0;
+    padding: 0;
+} */
+.container{
+    height:80vh;
+    width: 80vw;
+    border: 1px solid black;
+}
+.box{
+    height: 150px;
+    width: 150px;
+    border:1px solid blue;
+    /* transform: rotate(45deg); */
+    transform: rotateX(25deg) rotateY(35deg) skewY(10deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
