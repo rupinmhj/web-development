@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bounce ball</title>
+    <style>
+        .container{
+            height: 500px;
+            width: 1000px;
+            background-color: rgb(42, 90, 162);
+            position: relative;
+            
+        }
+        .box{
+            height: 20%;
+            width:10%;
+            position: absolute;
+            background-color: rgb(116, 22, 33);
+            border-radius:80px;
+            bottom: 0px;
+            animation: rupinAnimationx 3s linear infinite ,
+               rupinAnimationy 1s ease-out infinite alternate both;
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            /* animation-name: rupinAnimationx;
+            animation-duration: 3s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 1s;
+            animation-iteration-count: 3;
+            animation-fill-mode: forwards; */
+        }
+
+        @keyframes rupinAnimationx {
+            from{
+                left: 0;
+            }
+            to{
+                left: 100%;
+            }
+            
+        }
+        @keyframes rupinAnimationy {
+            from{
+                bottom:0;
+            }
+            to{
+                bottom:90%;
+            }
+            
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+    </div>
+</body>
+</html>
