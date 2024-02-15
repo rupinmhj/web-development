@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS filter</title>
+    <style>
+        .img1{
+            /* filter:blur(10px); */
+            filter:brightness(10%) contrast(90%);
+            
+        }
+        .img2{
+            filter:grayscale(50%)
+        }
+        .img3{
+            filter:invert(1)
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://ew.com/thmb/Y6f91PIB2uFB5OgOBVsya5Uk0sg=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/hugh-jackman-as-wolverine-in-logan-2000-e0a15a704a81421791b6e5e065884c8b.jpg" alt="" class="img1">
+        <img src="https://hips.hearstapps.com/digitalspyuk.cdnds.net/17/02/1484222978-deadpool.jpg?crop=0.7506666666666666xw:1xh;center,top&resize=1200:*" alt="" class="img2">
+        <img class="img3" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOGlnt09_JKZDg-CTu8-Zfi9UvHxGCYaV9rQ&usqp=CAU" alt="">
+    </div>
+</body>
+</html>
