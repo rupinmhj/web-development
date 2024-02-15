@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS object fit and object position</title>
+    <style>
+        .container{
+            height: 700px;
+            width:1200px;
+            border: 1px solid black;
+            background-image: url("https://dfstudio-d420.kxcdn.com/wordpress/wp-content/uploads/2019/06/digital_camera_photo-980x653.jpg");
+            background-position: top left;
+            background-repeat: no-repeat;
+            background-clip: border-box;
+        }
+        img{
+            height:400px;
+            width:300px;
+            /* object-fit: contain; */
+            object-fit: cover;
+            object-position: center center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- <img src="https://dfstudio-d420.kxcdn.com/wordpress/wp-content/uploads/2019/06/digital_camera_photo-980x653.jpg" alt=""> -->
+    </div>
+</body>
+</html>
