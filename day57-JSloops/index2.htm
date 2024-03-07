@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loop</title>
+</head>
+<body>
+    <h2>for in loop</h2>
+    <p id="rup"></p>
+    <script>
+        const language=['Python','Java Script','Java','C#'];
+        let x="";
+        let i;
+        for(i in language){
+            x+=language[i]+ "<br>";
+        }
+        console.log(x);
+        document.getElementById("rup").innerHTML=x;
+    </script>
+</body>
+</html>

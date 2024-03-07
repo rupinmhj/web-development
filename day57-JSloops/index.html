@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loops</title>
+  <!-- <script src="loops1.js"></script> -->
+</head>
+
+<body>
+  <h2>Loops in JavaScript</h2>
+  <p id="rup"></p>
+  <script>
+    const language = ['Python', 'C', 'Java', 'C#'];
+    let x = "";
+    for (let i = 0; i < language.length; i++) {
+      x += language[i] + "<br>"; // Add a line break after each language
+    }
+    document.getElementById("rup").innerHTML = x;
+  </script>
+</body>
+
+</html>
