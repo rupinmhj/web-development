@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const product={
+            name:"pant",
+            cost:45,
+            'delivery-time':"3 days",
+            rating:{
+                star:3.4,
+                count:45
+            },
+            fun:function func1(){
+                console.log("function inside object!!")  //JSON.stringify() cannot convert the object into json in the case of function
+            }
+        }
+        let j=JSON.stringify(product);
+        console.log(j);
+        console.log(JSON.parse(j));
+    </script>
+</body>
+</html>

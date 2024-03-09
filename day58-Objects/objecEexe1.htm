@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXERCISE OF OBJECT IN JS</title>
+</head>
+<body>
+    <h2>Basketball</h2>
+    <script>
+        function compareProduct(product1,product2){
+            if(product1.price<product2.price){
+                return product1;
+            }
+            else{
+                return product2;
+            }
+        }
+        const product1={
+            name:'basketball',
+            price:450,
+            "delivery-time":'3 days'
+        }
+        const product2={
+            name:'football',
+            price:950,
+            "delivery-time":'3 days'
+        }
+        console.log(compareProduct(product1,product2));
+        /*console.log(product.name);
+        console.log(product.price);
+        // increasing the price of basketball by 500 cents
+        product.price+=500;
+        console.log(product.price);
+        console.log(product['delivery-time']); */
+        
+    </script>
+</body>
+</html>
