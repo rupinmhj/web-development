@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Converter</title>
+</head>
+
+<body>
+    <h2>Celsius to Fahrenheit and Fahrenheit to Celsius</h2>
+
+    <button onclick="converter()">Converter</button>
+    <script>
+        let x,y;
+        let result;
+        function converter() {
+            x = parseFloat(prompt("Enter degrees:"));
+            y = prompt("Enter unit in celsius or fahreheit:");
+            result=toFahrenheit(x, y);
+            if (y === 'celsius') {
+                alert(x+ "celsius="+result+" fahrenheit");
+                console.log(result);
+            }
+            else {
+                alert(x+ "fahrenheit="+result+" celsius");
+            }
+        }
+        
+        function toFahrenheit(x, y) {
+            if (y === 'celsius') {
+                result = (x * 9 / 5) +32;
+            }
+            else {
+                result = (x - 32) * 5 / 9;
+
+            }
+            return result;
+        }
+        
+
+    </script>
+
+</body>
+
+</html>

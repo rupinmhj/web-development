@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock-Scissors-Paper</title>
+</head>
+<body>
+    <h2>Rock Scissors Paper</h2>
+    <button onclick="rockFunc()">Rock</button>
+    <button onclick="scissorsFunc()">Scissors</button>
+    <button onclick="paperFunc()">Paper</button>
+    
+    <script>
+        function rockFunc(){
+            let result='';
+            let computerMove=compMove();
+            if(computerMove==='rock'){
+                result='tie';
+            }
+            else if(computerMove==='paper'){
+                result='You lose';
+            }
+            else{
+                result='You win';
+            }
+            alert(`You picked rock. Computer picked ${computerMove}. ${result}`);
+        }
+
+        function scissorsFunc(){
+            let result='';
+            let computerMove=compMove();
+            if(computerMove==='scissors'){
+                result='tie';
+            }
+            else if(computerMove==='rock'){
+                result='You lose';
+            }
+            else{
+                result='You win';
+            }
+            alert(`You picked scissors. Computer picked ${computerMove}. ${result}`);
+        }
+
+        function paperFunc(){
+            let result='';
+            let computerMove=compMove();
+            if(computerMove==='paper'){
+                result='tie';
+            }
+            else if(computerMove==='scissors'){
+                result='You lose';
+            }
+            else{
+                result='You win';
+            }
+            alert(`You picked paper. Computer picked ${computerMove}. ${result}`);
+        }
+
+        function compMove(){
+            const randNo=Math.random();
+            let computerMove='';
+            if(randNo<=1/3){
+                computerMove='rock';
+            }
+            else if(randNo<=2/3){
+                computerMove='paper';
+            }
+            else{
+                computerMove='scissors';
+            }
+            return computerMove;
+
+        }
+
+    </script>
+    
+</body>
+</html>
