@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom project 1</title>
+    <style>
+        .youtube-subscribe{
+            background-color: rgb(234, 39, 39);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h2>Youtube subscribe</h2>
+    <button class="youtube-subscribe" onclick="subscribe()">Subscribe</button>
+
+    <h2>Amazon shippig Calculator</h2>
+    <input placeholder="Cost of order" class="js-cost-input" onkeydown="handleCostKeydown(event)">
+    <button  onclick="calculateTotal()">Calculate</button>
+    <p class="js-total-cost"></p>
+    <script>
+
+        function handleCostKeydown(event){
+            if(event.key==='Enter'){
+                calculateTotal();
+            }
+        }
+
+        function calculateTotal(){
+            let inputElement=document.querySelector('.js-cost-input');
+            console.log(inputElement.value);
+            let cost=Number(inputElement.value);
+            //dom returns the value in string so we need to manually 
+            //type cast the value into Number.
+            
+            if(cost<=40){
+                cost+=10;
+            }
+           document.querySelector('.js-total-cost')
+            .innerHTML=`Rs${cost}`;
+        }
+
+        function subscribe(){
+            const buttonElement=document.querySelector('.youtube-subscribe');
+            // console.log(buttonElement.innerHTML);
+            if (buttonElement.innerHTML==='Subscribe'){
+                buttonElement.innerHTML='Subscribed';
+                buttonElement.style.backgroundColor="grey";
+                
+            }
+            else{
+                buttonElement.innerHTML='Subscribe';
+                buttonElement.style.backgroundColor="red";
+            }
+            
+        }
+    </script>
+</body>
+</html>
