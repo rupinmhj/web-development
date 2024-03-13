@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom project 1</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .youtube-subscribe{
+            background-color:red;
+            color: white;
+            border:none;
+            border-radius: 20px;
+            padding: 10px 20px;
+            margin-bottom: 30px;
+            cursor: pointer;
+        }
+        .is-subscribed{
+            background-color: rgb(240,240,240);
+            color:black;
+        }
+        .js-cost-input{
+            font-size:15px;
+            padding:10px;
+        }
+        .calculate{
+            background-color:rgb(20, 139, 20);
+            color:white;
+            padding: 13px 40px;
+            border:none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h2>Youtube subscribe</h2>
+    <button class="youtube-subscribe" onclick="subscribe()">Subscribe</button>
+
+    <h2>Amazon shipping Calculator</h2>
+    <input placeholder="Cost of order" class="js-cost-input" onkeydown="handleCostKeydown(event)">
+    <button  class="calculate" onclick="calculateTotal()">Calculate</button>
+    <p class="js-total-cost"></p>
+    <script>
+
+        function handleCostKeydown(event){
+            if(event.key==='Enter'){
+                calculateTotal();
+            }
+        }
+
+        function calculateTotal(){
+            let inputElement=document.querySelector('.js-cost-input');
+            console.log(inputElement.value);
+            let cost=Number(inputElement.value);
+            //dom returns the value in string so we need to manually 
+            //type cast the value into Number.
+            
+            if(cost<=40){
+                cost+=10;
+            }
+           document.querySelector('.js-total-cost')
+            .innerHTML=`Rs${cost}`;
+        }
+
+        function subscribe(){
+            const buttonElement=document.querySelector('.youtube-subscribe');
+            // console.log(buttonElement.innerHTML);
+            if (buttonElement.innerHTML==='Subscribe'){
+                buttonElement.innerHTML='Subscribed';
+                buttonElement.classList.add('is-subscribed');
+                
+            }
+            else{
+                buttonElement.innerHTML='Subscribe';
+                buttonElement.classList.remove('is-subscribed');
+            }
+            
+        }
+    </script>
+</body>
+</html>
